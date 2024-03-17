@@ -1,23 +1,64 @@
-# ChatGPT Lite
+# Factor.AI :robot: :zap:
 
-ChatGPT demo forked from [chatgpt-lite](https://github.com/galadriel-ai/chatgpt-lite)
+Welcome to Factor.AI, the groundbreaking project built on the Galadriel Blockchain, a Layer 1 technology designed to integrate AI capabilities through blockchain calls. Our platform offers a unique ChatGPT-like interface that enables users to generate their own cryptocurrency tokens with ease. 🚀
 
-This is a demo app for [Galadriel](https://galadriel.com) 
+## Features :star2:
 
-To see the contracts this app uses check this repo: [Contracts](https://github.com/galadriel-ai/contracts)
+- **Token Generation**: Create your own tokens by specifying the token name, ticker, and supply. 🪙
+- **JSON Generation**: Automatically generate JSON parameters for your token. 📄
+- **Smart Contract Deployment**: Deploy your token as a smart contract on the blockchain with just a click. 🔗
+- **Wallet Integration**: Add your newly created token to your wallet seamlessly. 💼
 
-## Development
+## How It Works :gear:
 
-### Running Locally
+Factor.AI leverages the power of the Galadriel Blockchain to provide an AI-driven interface where users can interact and create tokens effortlessly. By simply entering token details, users can generate and deploy smart contracts, making the token creation process accessible to everyone.
 
-1. Install NodeJS 18.
-2. Clone the repository.
-3. Install dependencies with `npm install`.
-4. Copy `.env.example` to `.env.local` and update environment variables.  
-Edit .env.local
-`NEXT_PUBLIC_NETWORK` "local" defaults to `http://localhost:8545/`  
-and anything else uses `https://testnet.galadriel.com/` as the RPC url  
-The default contract address is Galadriel testnet contract address
-5. Start the application using `npm run dev`.
-6. Visit `http://localhost:3001` in your browser.
+## Getting Started :rocket:
 
+To get started with Factor.AI, follow these simple steps:
+
+### Prerequisites
+
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the project repository:
+
+```bash
+git clone <repository-url>
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd factor.ai
+```
+
+3. Install the required dependencies:
+
+```bash
+npm install
+```
+
+### Running the Project
+
+To launch Factor.AI, run the following command:
+
+```bash
+npm run dev
+```
+
+The application will start running on your local server. Open your browser and navigate to the displayed URL to access the interface.
+
+## Contributing :handshake:
+
+We welcome contributions to Factor.AI! If you have suggestions for improvements or bug fixes, please feel free to submit an issue or pull request.
+
+## License :scroll:
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+
+## Support :raising_hand:
+
+For support, please open an issue in the project repository or contact the project maintainers directly.
