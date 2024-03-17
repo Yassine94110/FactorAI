@@ -33,17 +33,19 @@ const ChatProvider = () => {
               style={{fontFamily: "PPMondwest-Regular"}}
             >
               <div className="text-7xl">
+              <img className="h-80 inline align-text-bottom" src="/logo.png"/>
                 <div>
-                  On-chain ChatGPT built by Galadriel
+                  On-chain GPT smartcontract builder powered by Galadriel
                 </div>
               </div>
-              <div className="pt-[100px]">
+              <div className="pt-[10px]">
                 <button
                   onClick={() => open()}
                   // className={"p-4 bg-[#00FF66] text-3xl text-black hover:bg-[#00b548] duration-200 " + FONT.className}
-                  className={"p-4 bg-[#00FF66] text-3xl text-black hover:bg-[#00b548] duration-200"}
+                  // className={"p-4 bg-[#00FF66] text-3xl text-black hover:bg-[#00b548] duration-200"}
+                  className={"bg-violet-700 hover:bg-violet-900 text-white text-3xl font-bold py-2 px-4 rounded duration-200"}
                 >
-                  Connect wallet to Chat
+                🔨 Connect wallet to build 🔨
                 </button>
                 <div className="pt-4 underline">
                   <a
