@@ -12,6 +12,7 @@
     "format:check": "prettier --check '**/*.{ts,tsx,js,json,html,css,scss,md}'"
   },
   "dependencies": {
+    "@metamask/detect-provider": "^2.0.0",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/themes": "^2.0.2",
     "@vercel/analytics": "^1.1.2",
