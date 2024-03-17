@@ -1,6 +1,6 @@
 # Factor.AI :robot: :zap:
 
-Welcome to Factor.AI, the groundbreaking project built on the Galadriel Blockchain, a Layer 1 technology designed to integrate AI capabilities through blockchain calls. Our platform offers a unique ChatGPT-like interface that enables users to generate their own cryptocurrency tokens with ease. 🚀
+Welcome to Factor.AI, the groundbreaking project built on the [Galadriel](https://www.galadriel.com/) Blockchain, a Layer 1 technology designed to integrate AI capabilities through blockchain. Our platform offers a unique ChatGPT-like interface that enables users to generate their own cryptocurrency tokens with ease. 🚀
 
 ## Features :star2:
 
@@ -11,7 +11,7 @@ Welcome to Factor.AI, the groundbreaking project built on the Galadriel Blockcha
 
 ## How It Works :gear:
 
-Factor.AI leverages the power of the Galadriel Blockchain to provide an AI-driven interface where users can interact and create tokens effortlessly. By simply entering token details, users can generate and deploy smart contracts, making the token creation process accessible to everyone.
+Factor.AI leverages the power of the Galadriel Blockchain to provide an AI-driven interface where users can interact and create tokens effortlessly. By simply entering token details, users can generate and deploy smart contracts, making the token creation process accessible to everyone on the chain that you want just by telling it to the AI.
 
 ## Getting Started :rocket:
 
