@@ -163,7 +163,7 @@ useEffect(() => {
       <SyntaxHighlighter {...rest} style={vscDarkPlus} language={match[1]} PreTag="div">
         {code}
       </SyntaxHighlighter>
-      <button onClick={handleDeploy}>Deployy</button>
+      <button className={"bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"} onClick={handleDeploy}>📜 Deploy ✨y</button>
 
       
 
