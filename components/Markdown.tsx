@@ -55,10 +55,15 @@ const [newChainId, setNewChainId] = useState< any>(undefined)
     })
   }, [code, copy])
 
+
+  
+
   useEffect(() => {
+    console.log("newContract oo",newContract)
     if(newContract!="loading..."){
       setHideAddToken(false);
     }
+    console.log("!hideAddToken AAA ",!hideAddToken);
   }, [newContract]); // Les croch
 
 
@@ -89,11 +94,20 @@ const [newChainId, setNewChainId] = useState< any>(undefined)
       
       if (chainId != undefined) {
         console.log("AYAAAAA")
+
+       console.log("chain = ",chainId)
   try {
+    if (chainId == 696969){
+      const wasAdded2 = await  window?.ethereum.request({
+        method: 'wallet_switchEthereumChain',
+        params: [{ chainId: '0xa4b1' }],
+      });
+    }else if (chainId == 88882){
     const wasAdded = await  window?.ethereum.request({
       method: 'wallet_switchEthereumChain',
-      params: [{ chainId: '0xa4b1' }],
+      params: [{ chainId: '0x15B32' }],
     });
+  }
 
   } catch (error) {
     console.log('error', error)
@@ -114,7 +128,6 @@ const [newChainId, setNewChainId] = useState< any>(undefined)
       const contract = await factory.deploy(token, symbol, initialSupply);
       const adressLastContract = await contract.getAddress()
     
-      setNewContract(adressLastContract)
     
   
           
@@ -131,6 +144,9 @@ const [newChainId, setNewChainId] = useState< any>(undefined)
   }
   setNewChainId(undefined)
   }
+  console.log("ouioui",adressLastContract);
+  setNewContract(adressLastContract)
+
 
 
 
@@ -166,8 +182,8 @@ const [newChainId, setNewChainId] = useState< any>(undefined)
       </SyntaxHighlighter>
       <button className={"bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded m-2"} onClick={handleDeploy}>📜 Deploy ✨</button>
 
-    
-{      !hideAddToken && <button className={"bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded m-2"} onClick={handleAddToken}>⤴️ Add to Metamask 🦊</button>}
+      { newContract!="loading..."?<button className={"bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded m-2"} onClick={handleAddToken}>⤴️ Add to Metamask 🦊</button>:''}
+
     
       
     
