@@ -29,9 +29,11 @@ export const Header = () => {
       style={{backgroundColor: 'var(--background-color)'}}
     >
       <Flex align="center" gap="3">
-        <NextLink href="/">
-          <Heading as="h2" size="9" style={{maxWidth: 1200, fontFamily: "PPNeueBit-Bold"}}>
-            Galadriel
+      <img className="h-48 inline align-text-bottom" src="/logo.png"/>
+
+                <NextLink href="/">
+          <Heading as="h2" size="8" style={{maxWidth: 800, fontFamily: "PPNeueBit-Bold"}}>
+            powered by Galadriel
           </Heading>
         </NextLink>
         <div

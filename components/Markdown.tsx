@@ -43,12 +43,7 @@ const [newContract, setNewContract] = useState<string | any>("loading...");
 const [hideAddToken, setHideAddToken] = useState<boolean>(true)
 const [newChainId, setNewChainId] = useState< any>(undefined)
 
-useEffect(() => {
- 
-  setNewContract(newContract);
 
-}
-, [newContract]);
 
   const code = match ? String(children).replace(/\n$/, '') : ''
 
@@ -59,6 +54,12 @@ useEffect(() => {
       }
     })
   }, [code, copy])
+
+  useEffect(() => {
+    if(newContract!="loading..."){
+      setHideAddToken(false);
+    }
+  }, [newContract]); // Les croch
 
 
   const handleAddToken = async () => {
@@ -112,10 +113,10 @@ useEffect(() => {
       const factory = new ContractFactory(ERC20WithNameSymbolSupply.abi, ERC20WithNameSymbolSupply.bytecode, signer);
       const contract = await factory.deploy(token, symbol, initialSupply);
       const adressLastContract = await contract.getAddress()
+    
       setNewContract(adressLastContract)
-      if (newContract !== "loading...") {
-        setHideAddToken(false)
-      }
+    
+  
           
       if (chainId != undefined) {
         // use window ethereum use wallet_switchEthereumChain to chain id 42161
@@ -163,10 +164,9 @@ useEffect(() => {
       <SyntaxHighlighter {...rest} style={vscDarkPlus} language={match[1]} PreTag="div">
         {code}
       </SyntaxHighlighter>
-      <button onClick={handleDeploy}>Deployy</button>
+      <button className={"bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"} onClick={handleDeploy}>📜 Deploy ✨</button>
 
-      
-
+    
 {      !hideAddToken && <div><button onClick={handleAddToken}>Add to Metamask</button></div>}
     
       
