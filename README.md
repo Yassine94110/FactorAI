@@ -19,20 +19,20 @@ To get started with Factor.AI, follow these simple steps:
 
 ### Prerequisites
 
-Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+Ensure you have [Node.js](https://nodejs.org/) (version 18) installed on your machine.
 
 ### Installation
 
 1. Clone the project repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Yassine94110/FactorAI.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd factor.ai
+cd FactorAI
 ```
 
 3. Install the required dependencies:
@@ -57,7 +57,7 @@ We welcome contributions to Factor.AI! If you have suggestions for improvements 
 
 ## License :scroll:
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Support :raising_hand:
 
